@@ -1,0 +1,22 @@
+name: cryptohash
+version: 0.0.1
+description: collection of cryptographic hash primitives
+licence: BSD
+license-file: LICENSE
+author: Vincent Hanquez <tab@snarc.org>
+obuild-ver: 1
+homepage: http://github.com/vincenthz/ocaml-cryptohash
+
+library cryptohash
+  modules:   Cryptohash
+  C-dir:     cbits
+  C-sources: md2.c, md2_stubs.c
+           , md4.c, md4_stubs.c
+           , md5.c, md5_stubs.c
+           , sha1.c, sha1_stubs.c
+           , sha256.c, sha224_stubs.c, sha256_stubs.c
+           , sha512.c, sha384_stubs.c, sha512_stubs.c
+           , sha3.c, sha3_stubs.c
+           , ripemd.c, ripemd160_stubs.c
+           , tiger.c, tiger_stubs.c
+           , whirlpool.c, whirlpool_stubs.c
